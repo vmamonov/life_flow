@@ -1,2 +1,2 @@
-# time-optimizer
+# Life flow
 Java-based application for time management
