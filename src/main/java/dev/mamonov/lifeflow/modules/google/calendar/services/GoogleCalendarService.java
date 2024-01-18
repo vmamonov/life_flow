@@ -31,7 +31,8 @@ public class GoogleCalendarService {
 			calendar = api.getCalendar();
 			newEvent = calendar.events().insert(
 				"primary", 
-				new Event().setSummary(titel)
+				new Event()
+					.setSummary(titel)
 					.setStart(new EventDateTime().setDateTime(start))
 					.setEnd(new EventDateTime().setDateTime(end)))
 				.execute();
