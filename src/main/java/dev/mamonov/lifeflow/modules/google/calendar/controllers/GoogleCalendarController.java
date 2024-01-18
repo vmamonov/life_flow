@@ -75,7 +75,7 @@ public class GoogleCalendarController {
 	
 	@ExceptionHandler(IOException.class)
 	@ResponseBody
-	public String authRedirectdd(IOException ex) throws JsonMappingException, JsonProcessingException {
+	public String ioExceptionHandler(IOException ex) throws JsonMappingException, JsonProcessingException {
 		System.out.println("-------IOException--------");
 		System.out.println(ex.getMessage());
 		ex.printStackTrace();
@@ -86,7 +86,7 @@ public class GoogleCalendarController {
 	
 	@ExceptionHandler(GeneralSecurityException.class)
 	@ResponseBody
-	public String authRedirectdd(GeneralSecurityException ex) {
+	public String generalSecurityExceptionHandler(GeneralSecurityException ex) {
 		System.out.println("------GeneralSecurityException---------");
 		System.out.println(ex.getMessage());
 		System.out.println("---------------");
